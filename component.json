@@ -1,6 +1,6 @@
 {
 	"description": "mergesort code bricks for JavaScript",
-	"version": "7.0.0",
+	"version": "7.0.1",
 	"repo": "aureooms/js-mergesort",
 	"scripts": [
 		"js/dist/mergesort.js"
