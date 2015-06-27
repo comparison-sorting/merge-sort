@@ -1,7 +1,11 @@
 [js-mergesort](http://aureooms.github.io/js-mergesort)
 ==
 
-Sorting code bricks for JavaScript.
+Mergesort code bricks for JavaScript.
+
+```js
+let sort = mergesort.recursive( merging.tapemerge , array.copy ) ;
+```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-mergesort.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-mergesort/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-mergesort.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-mergesort)
@@ -15,54 +19,127 @@ Sorting code bricks for JavaScript.
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-mergesort.svg?style=flat)](https://github.com/aureooms/js-mergesort/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-mergesort.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-mergesort)
 
-Can be managed through [duo](https://github.com/duojs/duo),
-[component](https://github.com/componentjs/component),
-[bower](https://github.com/bower/bower), or
-[npm](https://github.com/npm/npm).
 
-```js
-let sort = require( "aureooms-js-mergesort" ) ;
+Can be managed through [jspm](https://github.com/jspm/jspm-cli),
+[duo](https://github.com/duojs/duo),
+[component](https://github.com/componentjs/component),
+[bower](https://github.com/bower/bower),
+[ender](https://github.com/ender-js/Ender),
+[jam](https://github.com/caolan/jam),
+[spm](https://github.com/spmjs/spm),
+and [npm](https://github.com/npm/npm).
+
+## Install
+
+### jspm
+```terminal
+jspm install github:aureooms/js-mergesort
+# or
+jspm install npm:aureooms-js-mergesort
 ```
+### duo
+No install step needed for duo!
+
+### component
+```terminal
+component install aureooms/js-mergesort
+```
+
+### bower
+```terminal
+bower install aureooms-js-mergesort
+```
+
+### ender
+```terminal
+ender add aureooms-js-mergesort
+```
+
+### jam
+```terminal
+jam install aureooms-js-mergesort
+```
+
+### spm
+```terminal
+spm install aureooms-js-mergesort --save
+```
+
+### npm
+```terminal
+npm install aureooms-js-mergesort --save
+```
+
+## Require
+### jspm
+```js
+let mergesort = require( "github:aureooms/js-mergesort" ) ;
+// or
+import mergesort from 'aureooms-js-mergesort' ;
+```
+### duo
+```js
+let mergesort = require( "aureooms/js-mergesort" ) ;
+```
+
+### component, ender, spm, npm
+```js
+let mergesort = require( "aureooms-js-mergesort" ) ;
+```
+
+### bower
+The script tag exposes the global variable `mergesort`.
+```html
+<script src="bower_components/aureooms-js-mergesort/js/dist/mergesort.min.js"></script>
+```
+Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/).
+
+### jam
+```js
+require( [ "aureooms-js-mergesort" ] , function ( mergesort ) { ... } ) ;
+```
+
 
 ## Use
 
 ```js
+let array = require( "aureooms-js-array" ) ;
 let compare = require( "aureooms-js-compare" ) ;
+let merging = require( "aureooms-js-merging" ) ;
 
-/** quicksort using hoare partitioning */
-let quicksort = sort.__quicksort__( sort.hoare ) ;
+/** recursive mergesort */
+let sort = mergesort.recursive( merging.tapemerge , array.copy ) ;
 
-let a = [ 1 , 6 , 5 , 3 , 2 , 4 ] ;
+/** iterative mergesort */
+let sort = mergesort.iterative( merging.tapemerge , array.copy ) ;
 
-quicksort( compare.increasing , a , 0 , a.length ) ;
+// for example
 
-a ; // [ 1 , 2 , 3 , 4 , 5 , 6 ]
+let random = require( "aureooms-js-random" ) ;
 
-quicksort( compare.decreasing , a , 0 , a.length ) ;
+let n = 10 ;
+let A = array.alloc( n ) ;
+let B = array.alloc( n ) ;
 
-a ; // [ 6 , 5 , 4 , 3 , 2 , 1 ]
+array.iota( A , 0 , n , 0 ) ;
 
-// but also
+A ; // [ 0 , 1 , ... , 9 ]
 
-/** binary heapsort */
-let heapsort = sort.__heapsort__( 2 ) ;
-/** ternary heapsort */
-let heapsort = sort.__heapsort__( 3 ) ;
-/** quicksort (lomuto) */
-let quicksort = sort.__quicksort__( sort.lomuto ) ;
-/** dualpivotquicksort (yaroslavskiy) */
-let quicksort = sort.__dualpivotquicksort__( sort.yaroslavskiy ) ;
-/** insertionsort */
-let insertionsort = sort.insertionsort ;
-/** selectionsort */
-let selectionsort = sort.selectionsort ;
-/** bubblesort */
-let bubblesort = sort.bubblesort ;
+random.shuffle( A , 0 , n ) ;
+
+sort( compare.increasing , A , 0 , n , B , 0 , n ) ;
+
+B ; // [ 0 , 1 , ... , 9 ]
+
+// or decreasing
+
+random.shuffle( A , 0 , n ) ;
+
+sort( compare.decreasing , A , 0 , n , B , 0 , n ) ;
+
+B ; // [ 9 , 8 , ... , 0 ]
 ```
 
 ## Reference
 
-  - https://kluedo.ub.uni-kl.de/frontdoor/index/index/docId/3463
   - http://sorting.at
-
-***( forked from [js-sort](https://github.com/aureooms/js-sort) )***

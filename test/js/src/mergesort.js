@@ -1,8 +1,10 @@
-var all, util, array, random, compare, functools, itertools ;
+var all, util, sort, array, random, merging, compare, functools, itertools ;
 
 util = require( "util" );
+sort = require( "aureooms-js-sort" );
 array = require( "aureooms-js-array" );
 random = require( "aureooms-js-random" );
+merging = require( "aureooms-js-merging" );
 compare = require( "aureooms-js-compare" );
 functools = require( "aureooms-js-functools" );
 itertools = require( "aureooms-js-itertools" );
@@ -26,7 +28,7 @@ all = function( comparename, compare, mergesortname, method, n, type ) {
 
 		deepEqual( sort.issorted( compare , b , 0 , n ) , n , "check sorted" );
 		deepEqual( a.length, n, "check length a" );
-		deepEqual( d.length, n, "check length d" );
+		deepEqual( b.length, n, "check length b" );
 
 	});
 };
@@ -51,11 +53,11 @@ itertools.product( [
 ],
 
 [
-	[ "recursive mergesort", merging.recursive( merging.tapemerge , array.copy ) ] ,
-	[ "iterative mergesort" , merging.iterative( merging.tapemerge , array.copy ) ]
+	[ "recursive mergesort" , mergesort.recursive( merging.tapemerge , array.copy ) ] ,
+	[ "iterative mergesort" , mergesort.iterative( merging.tapemerge , array.copy ) ]
 ],
 
-[ [0] , [1] , [2] , [5] , [9] , [10] , [11] , [13] , [17] , [63] , [64] , [65] ] ,
+[ [0] , [1] , [2] , [5] , [9] , [10] , [11] , [13] , [17] , [63] , [64] , [65] , [128] ] ,
 
 [
 	[ Array ],

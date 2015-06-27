@@ -8,7 +8,7 @@ let recursive = function ( merge , copy ) {
 		let n = aj - ai ;
 		let k = 0 ;
 
-		while ( n > 0 && ( n & 1 !== 1 ) ) {
+		while ( n > 0 && ( n & 1 ) === 0 ) {
 			n >>>= 1 ;
 			++k ;
 		}
