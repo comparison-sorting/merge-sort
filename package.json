@@ -37,7 +37,7 @@
 		"url": "https://github.com/aureooms/js-mergesort.git",
 		"type": "git"
 	},
-	"version": "7.0.1",
+	"version": "7.0.2",
 	"spm": {
 		"main": "js/dist/mergesort.js"
 	}
