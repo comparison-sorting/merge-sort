@@ -1,19 +1,19 @@
 
 
-var iterativemergesort = function ( merge , copy ) {
+let _iterative = function ( merge , copy ) {
 
 	/**
 	 * Always makes at most A001855(n) comparisons.
 	 *
 	 */
 
-	var mergesort = function ( compare , a , ai , aj , b , bi ) {
+	let sort = function ( compare , a , ai , aj , b , bi ) {
 
-		var whole , left , center , right , mask , half ;
-		var i , j , k ;
-		var t , u , v , w , p ;
-		var q , r , s ;
-		var c ;
+		let whole , left , center , right , mask , half ;
+		let i , j , k ;
+		let t , u , v , w , p ;
+		let q , r , s ;
+		let c ;
 
 		whole = aj - ai ;
 
@@ -119,8 +119,8 @@ var iterativemergesort = function ( merge , copy ) {
 
 	} ;
 
-	return mergesort ;
+	return sort ;
 
 } ;
 
-exports.iterativemergesort = iterativemergesort ;
+exports._iterative = _iterative ;
