@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><title>_recursive</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="_recursive"><meta name="groc-project-path" content="js/src/_recursive.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-mergesort"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-mergesort/blob/master/js/src/_recursive.js">js/src/_recursive.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-keyword">let</span> _recursive = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> merge </span>) </span>{</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>if n = 2^k then
+   input is in a if k is odd
+   input is in b if k is even
+otherwise input is in both a and b
+output is in b</p></div></div><div class="code"><div class="wrapper">	<span class="hljs-keyword">let</span> sort = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> compare , a , ai , aj , b , bi , bj </span>) </span>{
+
+		<span class="hljs-keyword">if</span> ( aj - ai &lt; <span class="hljs-number">2</span> ) <span class="hljs-keyword">return</span> ;
+
+		<span class="hljs-keyword">let</span> p = <span class="hljs-built_in">Math</span>.floor( ( ai + aj ) / <span class="hljs-number">2</span> ) ;
+
+		sort( compare , b , bi , bi + p - ai , a , ai , p ) ;
+		sort( compare , b , bi + p - ai , bj , a , p , aj ) ;
+
+		merge( compare , a , ai , p , a , p , aj , b , bi ) ;
+
+	} ;
+
+	<span class="hljs-keyword">return</span> sort ;
+
+} ;
+
+exports._recursive = _recursive ;</div></div></div></div></body></html>
