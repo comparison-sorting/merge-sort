@@ -1,7 +1,8 @@
 [js-mergesort](http://aureooms.github.io/js-mergesort)
 ==
 
-Mergesort code bricks for JavaScript.
+Mergesort code bricks for JavaScript. Parent is
+[aureooms/js-sort](https://github.com/aureooms/js-sort).
 
 ```js
 let sort = mergesort.recursive( merging.tapemerge , array.copy ) ;
