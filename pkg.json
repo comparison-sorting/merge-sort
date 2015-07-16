@@ -14,5 +14,6 @@
 	"debug": false,
 	"src": "js/src/",
 	"out": "js/dist/",
-	"babel": true
+	"babel": true ,
+	"rec" : true
 }

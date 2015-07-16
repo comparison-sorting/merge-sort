@@ -1,8 +1,8 @@
-"use strict";
+'use strict';
 
 (function () {
 
-	"use strict";
+	'use strict';
 
 	var definition = function definition(exports, undefined) {
 
@@ -179,6 +179,43 @@
 
 		exports.iterative = iterative;
 
+		/* js/src/linkedlist */
+		(function (exports) {
+
+			/* js/src/linkedlist/recursive.js */
+
+			var recursive = function recursive(merge) {
+
+				var sort = function sort(compare, head, size) {
+
+					// Handle the base case.
+					if (size < 2) return head;
+
+					var m = size / 2 | 0;
+					var n = size - m;
+
+					var a = head,
+					    b = head;
+
+					// Search the middle element.
+					for (var _m = m; _m; --_m) {
+						b = b.next;
+					} // Sort the two sublists.
+					// a and b are the heads
+					// of the sorted sublists
+					a = sort(compare, a, m);
+					b = sort(compare, b, n);
+
+					// Merge the two sublists
+					// and return the new head.
+					return merge(compare, a, m, b, n);
+				};
+
+				return sort;
+			};
+
+			exports.recursive = recursive;
+		})(exports['linkedlist'] = {});
 		/* js/src/recursive.js */
 
 		var recursive = function recursive(merge, copy) {
@@ -214,13 +251,13 @@
 
 		return exports;
 	};
-	if (typeof exports === "object") {
+	if (typeof exports === 'object') {
 		definition(exports);
-	} else if (typeof define === "function" && define.amd) {
-		define("aureooms-js-mergesort", [], function () {
+	} else if (typeof define === 'function' && define.amd) {
+		define('aureooms-js-mergesort', [], function () {
 			return definition({});
 		});
-	} else if (typeof window === "object" && typeof window.document === "object") {
-		definition(window["mergesort"] = {});
-	} else console.error("unable to detect type of module to define for aureooms-js-mergesort");
+	} else if (typeof window === 'object' && typeof window.document === 'object') {
+		definition(window['mergesort'] = {});
+	} else console.error('unable to detect type of module to define for aureooms-js-mergesort');
 })();
