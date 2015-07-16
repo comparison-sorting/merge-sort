@@ -195,12 +195,17 @@
 					var n = size - m;
 
 					var a = head,
-					    b = head;
+					    _b = head;
 
 					// Search the middle element.
-					for (var _m = m; _m; --_m) {
-						b = b.next;
-					} // Sort the two sublists.
+					for (var _m = m - 1; _m; --_m) {
+						_b = _b.next;
+					}var b = _b.next;
+
+					// detach
+					_b.next = null;
+
+					// Sort the two sublists.
 					// a and b are the heads
 					// of the sorted sublists
 					a = sort(compare, a, m);

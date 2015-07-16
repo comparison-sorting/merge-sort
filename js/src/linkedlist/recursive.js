@@ -9,10 +9,15 @@ const recursive = function ( merge ) {
 		const m = size / 2 | 0 ;
 		const n = size - m ;
 
-		let a = head , b = head ;
+		let a = head , _b = head ;
 
 		// Search the middle element.
-		for ( let _m = m ; _m ; --_m ) b = b.next ;
+		for ( let _m = m - 1 ; _m ; --_m ) _b = _b.next ;
+
+		let b = _b.next ;
+
+		// detach
+		_b.next = null ;
 
 		// Sort the two sublists.
 		// a and b are the heads
