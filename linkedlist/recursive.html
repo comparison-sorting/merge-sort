@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><title>linkedlist/recursive</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../"><meta name="groc-document-path" content="linkedlist/recursive"><meta name="groc-project-path" content="js/src/linkedlist/recursive.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-mergesort"><link rel="stylesheet" type="text/css" media="all" href="../assets/style.css"><script type="text/javascript" src="../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-mergesort/blob/master/js/src/linkedlist/recursive.js">js/src/linkedlist/recursive.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-keyword">const</span> recursive = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> merge </span>) </span>{
+
+	<span class="hljs-keyword">const</span> sort = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> compare , head , size </span>) </span>{</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>Handle the base case.</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">if</span> ( size &lt; <span class="hljs-number">2</span> ) <span class="hljs-keyword">return</span> head ;
+
+		<span class="hljs-keyword">const</span> m = size / <span class="hljs-number">2</span> | <span class="hljs-number">0</span> ;
+		<span class="hljs-keyword">const</span> n = size - m ;
+
+		<span class="hljs-keyword">let</span> a = head , _b = head ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>Search the middle element.</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> _m = m - <span class="hljs-number">1</span> ; _m ; --_m ) _b = _b.next ;
+
+		<span class="hljs-keyword">let</span> b = _b.next ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>detach</p></div></div><div class="code"><div class="wrapper">		_b.next = <span class="hljs-literal">null</span> ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>Sort the two sublists.
+a and b are the heads
+of the sorted sublists</p></div></div><div class="code"><div class="wrapper">		a = sort( compare , a , m ) ;
+		b = sort( compare , b , n ) ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>Merge the two sublists
+and return the new head.</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">return</span> merge( compare , a , m , b , n ) ;
+
+	} ;
+
+	<span class="hljs-keyword">return</span> sort ;
+
+} ;
+
+exports.recursive = recursive ;</div></div></div></div></body></html>
