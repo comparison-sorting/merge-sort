@@ -8,16 +8,16 @@ Mergesort code bricks for JavaScript. Parent is
 let sort = mergesort.recursive( merging.tapemerge , array.copy ) ;
 ```
 
-[![NPM license](http://img.shields.io/npm/l/@aureooms/js-mergesort.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-mergesort/master/LICENSE)
-[![NPM version](http://img.shields.io/npm/v/@aureooms/js-mergesort.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-mergesort)
-[![Bower version](http://img.shields.io/bower/v/@aureooms/js-mergesort.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-mergesort)
-[![Build Status](http://img.shields.io/travis/aureooms/js-mergesort.svg?style=flat)](https://travis-ci.org/aureooms/js-mergesort)
-[![Coverage Status](http://img.shields.io/coveralls/aureooms/js-mergesort.svg?style=flat)](https://coveralls.io/r/aureooms/js-mergesort)
-[![Dependencies Status](http://img.shields.io/david/aureooms/js-mergesort.svg?style=flat)](https://david-dm.org/aureooms/js-mergesort#info=dependencies)
-[![devDependencies Status](http://img.shields.io/david/dev/aureooms/js-mergesort.svg?style=flat)](https://david-dm.org/aureooms/js-mergesort#info=devDependencies)
-[![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-mergesort.svg?style=flat)](https://codeclimate.com/github/aureooms/js-mergesort)
-[![NPM downloads per month](http://img.shields.io/npm/dm/@aureooms/js-mergesort.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-mergesort)
-[![GitHub issues](http://img.shields.io/github/issues/aureooms/js-mergesort.svg?style=flat)](https://github.com/aureooms/js-mergesort/issues)
+[![NPM license](https://img.shields.io/npm/l/@aureooms/js-mergesort.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-mergesort/master/LICENSE)
+[![NPM version](https://img.shields.io/npm/v/@aureooms/js-mergesort.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-mergesort)
+[![Bower version](https://img.shields.io/bower/v/@aureooms/js-mergesort.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-mergesort)
+[![Build Status](https://img.shields.io/travis/aureooms/js-mergesort.svg?style=flat)](https://travis-ci.org/aureooms/js-mergesort)
+[![Coverage Status](https://img.shields.io/coveralls/aureooms/js-mergesort.svg?style=flat)](https://coveralls.io/r/aureooms/js-mergesort)
+[![Dependencies Status](https://img.shields.io/david/aureooms/js-mergesort.svg?style=flat)](https://david-dm.org/aureooms/js-mergesort#info=dependencies)
+[![devDependencies Status](https://img.shields.io/david/dev/aureooms/js-mergesort.svg?style=flat)](https://david-dm.org/aureooms/js-mergesort#info=devDependencies)
+[![Code Climate](https://img.shields.io/codeclimate/github/aureooms/js-mergesort.svg?style=flat)](https://codeclimate.com/github/aureooms/js-mergesort)
+[![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-mergesort.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-mergesort)
+[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-mergesort.svg?style=flat)](https://github.com/aureooms/js-mergesort/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-mergesort.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-mergesort)
 
 
