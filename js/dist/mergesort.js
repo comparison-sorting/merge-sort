@@ -259,10 +259,10 @@
 	if (typeof exports === 'object') {
 		definition(exports);
 	} else if (typeof define === 'function' && define.amd) {
-		define('aureooms-js-mergesort', [], function () {
+		define('@aureooms/js-mergesort', [], function () {
 			return definition({});
 		});
 	} else if (typeof window === 'object' && typeof window.document === 'object') {
 		definition(window['mergesort'] = {});
-	} else console.error('unable to detect type of module to define for aureooms-js-mergesort');
+	} else console.error('unable to detect type of module to define for @aureooms/js-mergesort');
 })();

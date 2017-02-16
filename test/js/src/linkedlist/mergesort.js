@@ -1,12 +1,12 @@
 
 var util = require( "util" );
-var sll = require( "aureooms-js-sll" );
-var sort = require( "aureooms-js-sort" );
-var array = require( "aureooms-js-array" );
-var merging = require( "aureooms-js-merging" );
-var compare = require( "aureooms-js-compare" );
-var functools = require( "aureooms-js-functools" );
-var itertools = require( "aureooms-js-itertools" );
+var sll = require( "@aureooms/js-sll" );
+var sort = require( "@aureooms/js-sort" );
+var array = require( "@aureooms/js-array" );
+var merging = require( "@aureooms/js-merging" );
+var compare = require( "@aureooms/js-compare" );
+var functools = require( "@aureooms/js-functools" );
+var itertools = require( "@aureooms/js-itertools" );
 
 var all = function( comparename, compare, mergesortname, method, n ) {
 
