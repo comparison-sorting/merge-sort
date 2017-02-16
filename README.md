@@ -8,7 +8,7 @@ Mergesort code bricks for JavaScript. Parent is
 let sort = mergesort.recursive( merging.tapemerge , array.copy ) ;
 ```
 
-[![NPM license](https://img.shields.io/npm/l/@aureooms/js-mergesort.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-mergesort/master/LICENSE)
+[![License](https://img.shields.io/github/license/aureooms/js-mergesort.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-mergesort/master/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-mergesort.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-mergesort)
 [![Bower version](https://img.shields.io/bower/v/@aureooms/js-mergesort.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-mergesort)
 [![Build Status](https://img.shields.io/travis/aureooms/js-mergesort.svg?style=flat)](https://travis-ci.org/aureooms/js-mergesort)
