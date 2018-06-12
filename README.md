@@ -1,6 +1,8 @@
 [js-mergesort](http://aureooms.github.io/js-mergesort)
 ==
 
+<img src="https://idea-instructions.com/merge-sort.png" width="864"/>
+
 Mergesort code bricks for JavaScript. Parent is
 [aureooms/js-sort](https://github.com/aureooms/js-sort).
 
