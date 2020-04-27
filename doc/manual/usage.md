@@ -12,7 +12,7 @@ import '@babel/polyfill' ;
 
 Then, import the library where needed
 ```js
-const {var} = require( '{fullname}' ) ;
+const mergesort = require( '@aureooms/js-mergesort' ) ;
 // or
-import * as {var} from '{fullname}' ;
+import * as mergesort from '@aureooms/js-mergesort' ;
 ```

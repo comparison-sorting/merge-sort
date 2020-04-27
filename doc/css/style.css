@@ -3,50 +3,50 @@ h2,
 .navigation,
 .layout-container > header,
 footer
-{{
+{
 	border: none;
-}}
+}
 
-.project-name {{
+.project-name {
   color: #FC913A;
   font-weight: bold;
-}}
+}
 
-.layout-container > header > a.repo-url-github {{
+.layout-container > header > a.repo-url-github {
     font-size: inherit;
     display: inline;
     background: none;
     vertical-align: inherit;
-}}
+}
 
-.search-box img {{
+.search-box img {
 	display: none;
-}}
+}
 
-.search-box::before{{
+.search-box::before{
 	content: "search";
-}}
+}
 
-.search-input-edge {{
+.search-input-edge {
 	height: 0px;
-}}
+}
 
-.search-result {{
+.search-result {
     width: 300px;
     margin-left: 42px;
 	box-shadow: 1px 1px 13px rgba(0,0,0,0.2);
-}}
+}
 
-.search-input {{
+.search-input {
 	visibility: visible;
-}}
+}
 
-.search-result li.search-separator {{
+.search-result li.search-separator {
 	text-transform: capitalize;
 	background-color: #ccc;
-}}
+}
 
-span[data-ice="signature"] > span {{
+span[data-ice="signature"] > span {
 	/*font-weight: bold;*/
 	font-style: italic;
-}}
+}

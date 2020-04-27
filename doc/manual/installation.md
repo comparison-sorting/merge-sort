@@ -8,15 +8,15 @@ or [jspm](https://jspm.org/docs).
 
 ### yarn
 ```terminal
-yarn add {fullname}
+yarn add @aureooms/js-mergesort
 ```
 
 ### npm
 ```terminal
-npm install {fullname} --save
+npm install @aureooms/js-mergesort --save
 ```
 
 ### jspm
 ```terminal
-jspm install npm:{fullname}
+jspm install npm:@aureooms/js-mergesort
 ```
