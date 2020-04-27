@@ -3,29 +3,26 @@ import * as mergesort from '../../../src';
 
 import util from "util" ;
 import sll from "@aureooms/js-sll" ;
-import sort from "@aureooms/js-sort" ;
-import array from "@aureooms/js-array" ;
+import * as sort from "@aureooms/js-sort" ;
+import * as array from "@aureooms/js-array" ;
 import merging from "@aureooms/js-merging" ;
 import compare from "@aureooms/js-compare" ;
 import functools from "@aureooms/js-functools" ;
-import itertools from "@aureooms/js-itertools" ;
+import * as itertools from "@aureooms/js-itertools" ;
 
-var all = function( comparename, compare, mergesortname, method, n ) {
+const all = function( comparename, compare, mergesortname, method, n ) {
 
-	var title = util.format( "%s (%d, %s)", mergesortname , n, comparename );
+	const title = util.format( "%s (%d, %s)", mergesortname , n, comparename );
 
-	console.log( title );
-
-test( title, t => {
+	test( title, t => {
 
 		// SETUP ARRAY, DEST
-		var a = array.alloc( n );
+		const a = array.alloc( n );
 		array.fillfn( a, 0, n, Math.random );
-		var A = sll.list( a ) ;
+		const A = sll.list( a ) ;
+		const B = method( compare , A , n ) ;
 
-		A = method( compare , A , n ) ;
-
-		var b = itertools.list( sll.iter( A ) ) ;
+		const b = itertools.list( sll.iter( B ) ) ;
 
 		t.deepEqual( sort.issorted( compare , b , 0 , n ) , n , "check sorted" );
 		t.deepEqual( a.length, n, "check length a" );

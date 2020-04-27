@@ -2,25 +2,23 @@ import test from 'ava';
 import * as mergesort from '../../src';
 
 import util from "util" ;
-import sort from "@aureooms/js-sort" ;
-import array from "@aureooms/js-array" ;
-import random from "@aureooms/js-random" ;
+import * as sort from "@aureooms/js-sort" ;
+import * as array from "@aureooms/js-array" ;
+import * as random from "@aureooms/js-random" ;
 import merging from "@aureooms/js-merging" ;
 import compare from "@aureooms/js-compare" ;
 import functools from "@aureooms/js-functools" ;
-import itertools from "@aureooms/js-itertools" ;
+import * as itertools from "@aureooms/js-itertools" ;
 
 function all( comparename, compare, mergesortname, method, n, type ) {
 
-	var title = util.format( "%s (new %s(%d), %s)", mergesortname, type.name, n, comparename );
+	const title = util.format( "%s (new %s(%d), %s)", mergesortname, type.name, n, comparename );
 
-	console.log( title );
-
-test( title, t => {
+	test( title, t => {
 
 		// SETUP ARRAY, DEST
-		var a = new type( n );
-		var b = new type( n );
+		const a = new type( n );
+		const b = new type( n );
 		array.iota( a, 0, n, 0 );
 
 		// SORT ARRAY
