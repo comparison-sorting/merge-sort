@@ -1,13 +1,35 @@
 {
+  "name": "@aureooms/js-mergesort",
+  "description": "mergesort code bricks for JavaScript",
+  "version": "7.1.0",
   "author": "aureooms",
-  "scripts": {
-    "build": "rm -rf lib && babel src -d lib",
-    "test": "ava",
-    "esdoc": "esdoc",
-    "prepare": "npm run build",
-    "cover": "nyc --reporter=lcov npm test",
-    "release": "np"
+  "ava": {
+    "files": [
+      "test/src/**/*"
+    ],
+    "require": [
+      "@babel/polyfill",
+      "@babel/register"
+    ],
+    "timeout": "1m"
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-async-generator-functions"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/aureooms/js-mergesort/issues"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@aureooms/js-array": "^4.0.0",
     "@aureooms/js-compare": "^1.4.5",
@@ -32,14 +54,10 @@
     "np": "6.2.2",
     "nyc": "15.0.1"
   },
-  "main": "lib/index.js",
-  "bugs": {
-    "url": "https://github.com/aureooms/js-mergesort/issues"
-  },
-  "license": "AGPL-3.0",
+  "files": [
+    "lib"
+  ],
   "homepage": "http://aureooms.github.io/js-mergesort/",
-  "description": "mergesort code bricks for JavaScript",
-  "dependencies": {},
   "keywords": [
     "bricks",
     "ender",
@@ -48,36 +66,18 @@
     "mergesort",
     "sorting"
   ],
-  "name": "@aureooms/js-mergesort",
+  "license": "AGPL-3.0",
+  "main": "lib/index.js",
   "repository": {
     "url": "https://github.com/aureooms/js-mergesort.git",
     "type": "git"
   },
-  "version": "7.1.0",
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ],
-    "plugins": [
-      "@babel/plugin-proposal-async-generator-functions"
-    ],
-    "env": {
-      "development": {
-        "sourceMaps": "inline"
-      }
-    }
-  },
-  "ava": {
-    "files": [
-      "test/src/**/*"
-    ],
-    "require": [
-      "@babel/polyfill",
-      "@babel/register"
-    ],
-    "timeout": "1m"
-  },
-  "files": [
-    "lib"
-  ]
+  "scripts": {
+    "build": "rm -rf lib && babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "esdoc": "esdoc",
+    "prepare": "npm run build",
+    "release": "np",
+    "test": "ava"
+  }
 }
