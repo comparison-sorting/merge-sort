@@ -1,6 +1,6 @@
 
 
-let _iterative = function ( merge , copy ) {
+export function _iterative ( merge , copy ) {
 
 	/**
 	 * Always makes at most A001855(n) comparisons.
@@ -121,6 +121,5 @@ let _iterative = function ( merge , copy ) {
 
 	return sort ;
 
-} ;
+}
 
-exports._iterative = _iterative ;

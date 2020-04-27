@@ -1,5 +1,5 @@
 
-const recursive = function ( merge ) {
+export function recursive ( merge ) {
 
 	const sort = function ( compare , head , size ) {
 
@@ -33,6 +33,5 @@ const recursive = function ( merge ) {
 
 	return sort ;
 
-} ;
+}
 
-exports.recursive = recursive ;

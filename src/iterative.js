@@ -1,5 +1,5 @@
 
-let iterative = function ( merge , copy ) {
+export function iterative ( merge , copy ) {
 
 	let sort = _iterative( merge , copy ) ;
 
@@ -11,6 +11,5 @@ let iterative = function ( merge , copy ) {
 
 	} ;
 
-} ;
+}
 
-exports.iterative = iterative ;

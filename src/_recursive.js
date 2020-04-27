@@ -1,6 +1,6 @@
 
 
-let _recursive = function ( merge ) {
+export function _recursive ( merge ) {
 
 	/**
 	 * if n = 2^k then
@@ -25,6 +25,5 @@ let _recursive = function ( merge ) {
 
 	return sort ;
 
-} ;
+}
 
-exports._recursive = _recursive ;

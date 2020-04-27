@@ -1,5 +1,5 @@
 
-let recursive = function ( merge , copy ) {
+export function recursive ( merge , copy ) {
 
 	let sort = _recursive( merge ) ;
 
@@ -33,6 +33,5 @@ let recursive = function ( merge , copy ) {
 
 	} ;
 
-} ;
+}
 
-exports.recursive = recursive ;
