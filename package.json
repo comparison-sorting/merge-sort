@@ -54,9 +54,6 @@
     "type": "git"
   },
   "version": "7.1.0",
-  "spm": {
-    "main": "js/dist/mergesort.js"
-  },
   "babel": {
     "presets": [
       "@babel/preset-env"
