@@ -1,4 +1,4 @@
-:dragon: [@aureooms/js-mergesort](http://aureooms.github.io/js-mergesort)
+:dragon: [@aureooms/js-mergesort](https://aureooms.github.io/js-mergesort)
 ==
 
 <p align="center">
@@ -46,7 +46,7 @@ isSorted(increasing, b, 0, b.length) ; // true
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-mergesort.svg)](https://codeclimate.com/github/aureooms/js-mergesort/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-mergesort/main.svg)](https://codecov.io/gh/aureooms/js-mergesort)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-mergesort.svg)](https://codeclimate.com/github/aureooms/js-mergesort/trends/technical_debt)
-[![Documentation](http://aureooms.github.io/js-mergesort//badge.svg)](http://aureooms.github.io/js-mergesort//source.html)
+[![Documentation](https://aureooms.github.io/js-mergesort//badge.svg)](https://aureooms.github.io/js-mergesort//source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-mergesort)](https://bundlephobia.com/result?p=@aureooms/js-mergesort)
 
 ## :link: Links
