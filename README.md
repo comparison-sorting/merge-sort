@@ -1,7 +1,16 @@
 :dragon: [@aureooms/js-mergesort](http://aureooms.github.io/js-mergesort)
 ==
 
-<img src="https://idea-instructions.com/merge-sort.png" width="864"/>
+<p align="center">
+<a href="https://idea-instructions.com/merge-sort">
+<img src="https://idea-instructions.com/merge-sort.png" width="600"/>
+</a><br/>
+<i>IDEA Instructions</i>
+developed by
+<a href="https://www.ibr.cs.tu-bs.de/users/fekete">Sándor P. Fekete</a>
+and
+<a href="https://morr.cc">Sebastian Morr</a>.
+</p>
 
 Mergesort library for JavaScript.
 See [docs](https://aureooms.github.io/js-mergesort/index.html).
