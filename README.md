@@ -1,4 +1,4 @@
-[@aureooms/js-mergesort](http://aureooms.github.io/js-mergesort)
+:dragon: [@aureooms/js-mergesort](http://aureooms.github.io/js-mergesort)
 ==
 
 <img src="https://idea-instructions.com/merge-sort.png" width="864"/>
@@ -26,6 +26,6 @@ let sort = mergesort.recursive( merging.tapemerge , array.copy ) ;
 [![Documentation](http://aureooms.github.io/js-mergesort//badge.svg)](http://aureooms.github.io/js-mergesort//source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-mergesort)](https://bundlephobia.com/result?p=@aureooms/js-mergesort)
 
-## Reference
+## :scroll: Reference
 
   - http://sorting.at
