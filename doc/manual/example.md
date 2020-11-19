@@ -1,6 +1,6 @@
 # Examples
 
-> More examples in [the test files](https://github.com/aureooms/js-mergesort/tree/master/test/src).
+> More examples in [the test files](https://github.com/aureooms/js-mergesort/tree/main/test/src).
 
 
 ```js
