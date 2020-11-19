@@ -49,6 +49,6 @@ isSorted(increasing, b, 0, b.length) ; // true
 [![Documentation](http://aureooms.github.io/js-mergesort//badge.svg)](http://aureooms.github.io/js-mergesort//source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-mergesort)](https://bundlephobia.com/result?p=@aureooms/js-mergesort)
 
-## :scroll: Reference
+## :link: Links
 
   - http://sorting.at
