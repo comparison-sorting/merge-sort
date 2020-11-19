@@ -30,8 +30,8 @@ let b = new Array(data.length) ;
 import { increasing } from '@aureooms/js-compare' ;
 sort(increasing, a, 0, a.length, b, 0, b.length) ;
 
-import { isSorted } from '@aureooms/js-sort' ;
-isSorted(increasing, b, 0, b.length) ; // true
+import { issorted } from '@aureooms/js-sort' ;
+issorted(increasing, b, 0, b.length) ; // true
 ```
 
 [![License](https://img.shields.io/github/license/aureooms/js-mergesort.svg)](https://raw.githubusercontent.com/aureooms/js-mergesort/main/LICENSE)
