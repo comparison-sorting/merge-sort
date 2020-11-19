@@ -17,7 +17,21 @@ See [docs](https://aureooms.github.io/js-mergesort/index.html).
 Parent is [aureooms/js-sort](https://github.com/aureooms/js-sort).
 
 ```js
-let sort = mergesort.recursive( merging.tapemerge , array.copy ) ;
+import * as array from '@aureooms/js-array' ;
+import * as merging from '@aureooms/js-merging' ;
+import * as mergesort from '@aureooms/js-mergesort' ;
+
+const sort = mergesort.recursive( merging.tapemerge , array.copy ) ;
+
+let data = [ /*...*/ ] ;
+let a = data.slice();
+let b = new Array(data.length) ;
+
+import { increasing } from '@aureooms/js-compare' ;
+sort(increasing, a, 0, a.length, b, 0, b.length) ;
+
+import { isSorted } from '@aureooms/js-sort' ;
+isSorted(increasing, b, 0, b.length) ; // true
 ```
 
 [![License](https://img.shields.io/github/license/aureooms/js-mergesort.svg)](https://raw.githubusercontent.com/aureooms/js-mergesort/main/LICENSE)
