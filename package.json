@@ -73,7 +73,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-mergesort/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-mergesort/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -120,7 +120,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/aureooms/js-mergesort.git",
+    "url": "https://github.com/make-github-pseudonymous-again/js-mergesort.git",
     "type": "git"
   },
   "scripts": {
